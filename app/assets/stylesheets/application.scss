@@ -1,0 +1,11 @@
+// Graphical variables
+@import "config/variables";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap";
+
+// Our Css
+@import "components/index";
+@import "pages/index";
+

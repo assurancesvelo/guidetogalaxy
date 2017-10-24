@@ -1,0 +1,135 @@
+/* Header */
+.large-header {
+  position: absolute;
+  height:100vh;
+  background-size: cover;
+  background-position: center center;;
+  z-index:1;
+}
+.baseline{
+  position:relative;
+  top:-100vh;
+  bottom:0;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  color: white;
+  text-align:center;
+  .baseline-text{
+    h1{
+      font-family:$base-font;
+      text-transform: uppercase;
+      font-weight:bold;
+      font-size: 70px;
+    }
+    h2{
+      padding-bottom:1em;
+      font-family:$header-font;
+      font-size: 20px;
+    }
+  }
+}
+
+.banner-wrapper{
+  position:relative;
+  top:100vh;
+  background-color:$black;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  .banner{
+    padding:4em 2em;
+    h1{
+      color:white;
+      fontsize: 30px;
+      font-family:$header-font;
+      font-weight:bold;
+      text-transform:uppercase;
+    }
+    .banner-underline{
+      padding-top:0.2em;
+      background-color:$yellow;
+    }
+  }
+}
+
+.banner-wrapper-items{
+  padding: 4em 0em;
+  .banner-banner{
+    padding: 2em 1em;
+    border: solid 1px white;
+    border-radius: 3px;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    .banner-banner-content{
+      color: $gray-medium;
+      text-align:center;
+      h2{
+        color:white;
+        font-family: $base-font;
+        text-transform: uppercase;
+        font-weight:bold;
+        font-size:20px;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid $yellow;
+      }
+      h3{
+        color:$yellow;
+        font-family: $base-font;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        font-weight:bold;
+      }
+    }
+  }
+}
+
+.banner-color-purple{
+  h2{
+    border-bottom: 1px solid $purple !important;
+  }
+  h3{
+    color:$purple!important;
+  }
+  .banner-underline{
+    background-color:$purple !important;
+  }
+}
+
+
+.banner-color-green{
+  h2{
+    border-bottom: 1px solid $green !important;
+  }
+  h3{
+    color:$green!important;
+  }
+  .banner-underline{
+    background-color:$green !important;
+  }
+}
+
+.banner-color-red{
+  h2{
+    border-bottom: 1px solid $red !important;
+  }
+  h3{
+    color:$red!important;
+  }
+  .banner-underline{
+    background-color:$red !important;
+  }
+}
+
+.banner-color-blue{
+  h2{
+    border-bottom: 1px solid $blue !important;
+  }
+  h3{
+    color:$blue!important;
+  }
+  .banner-underline{
+    background-color:$blue !important;
+  }
+}
