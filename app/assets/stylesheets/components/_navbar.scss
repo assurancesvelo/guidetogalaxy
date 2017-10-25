@@ -104,3 +104,10 @@
    }
  }
 }
+
+.nav-link-blue{
+  color:$blue!important;
+  &:hover{
+    color:$purple!important;
+  }
+}

@@ -5,6 +5,9 @@
   <a class="navbar-brand js-scroll-trigger" href="/"></a>
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav mx-auto">
+
+      <% if user_signed_in? %>
+
       <li class="nav-item">
         <a class="nav-link" href="#home" id="btn-antivol-nav">home</a>
       </li>
@@ -23,6 +26,21 @@
       <li class="nav-item">
         <a class="nav-link" href="#retention" id="btn-challenge-nav">Rétention & Referal</a>
       </li>
+      <li class="nav-item">
+        <%= link_to "Deconnexion", destroy_user_session_path, method: :delete, class: "nav-link" %>
+      </li>
+
+      <% else %>
+
+      <li class="nav-item">
+        <%= link_to "Connexion", new_user_session_path, class: "nav-link nav-link-blue" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Inscription", new_user_registration_path, class: "nav-link" %>
+      </li>
+
+      <% end %>
+
     </ul>
   </div>
 </nav>
