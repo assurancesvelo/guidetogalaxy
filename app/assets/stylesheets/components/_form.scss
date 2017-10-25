@@ -34,7 +34,7 @@
 }
 
 .form-control::-webkit-input-placeholder { color: $purple; }  /* WebKit, Blink, Edge */
-.form-control:-moz-placeholder { color: $purple; }  /* Mozilla Firefox 4 to 18 */
+.form-control:-moz-placeholder { color: $purple; } /*  Mozilla Firefox 4 to 18 */
 .form-control::-moz-placeholder { color: $purple; }  /* Mozilla Firefox 19+ */
 .form-control:-ms-input-placeholder { color: $purple; }  /*  Internet Explorer 10-11*/
 .form-control::-ms-input-placeholder { color: $purple; }  /* Microsoft Edge */
