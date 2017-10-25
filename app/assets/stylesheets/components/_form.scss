@@ -5,6 +5,7 @@
   bottom:0;
   height: 100vh;
   width: 100%;
+  z-index: 0;
   color: white;
   text-align:center;
   display: flex;
@@ -33,7 +34,7 @@
 }
 
 .form-control::-webkit-input-placeholder { color: $purple; }  /* WebKit, Blink, Edge */
-.form-control:-moz-placeholder { color: $purple; }  /* Mozilla Firefox 4 to 18 */
+.form-control:-moz-placeholder { color: $purple; } /*  Mozilla Firefox 4 to 18 */
 .form-control::-moz-placeholder { color: $purple; }  /* Mozilla Firefox 19+ */
 .form-control:-ms-input-placeholder { color: $purple; }  /*  Internet Explorer 10-11*/
 .form-control::-ms-input-placeholder { color: $purple; }  /* Microsoft Edge */
