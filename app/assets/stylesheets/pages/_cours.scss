@@ -1,0 +1,59 @@
+.cours-header{
+  height: 20vh !important;
+  background-size:cover !important;
+  background-position:center !important;
+  background-repeat: no-repeat !important;
+  h1{
+    color:white;
+    font-family:$base-font;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 50px;
+  }
+}
+
+.cours-page{
+   .title-underline{
+    border-bottom: solid 2px $green;
+   }
+    h2{
+    padding-top:1em;
+    padding-bottom:0.25em;
+    font-family:$base-font;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 30px;
+  }
+  h3{
+   padding-top:1em;
+   font-family:$base-font;
+   text-transform: uppercase;
+   font-size: 20px;
+   font-weight:bold;
+  }
+  a{
+  color:$red;
+  border-bottom:solid 1px $red;
+  text-decoration: none;
+  &:hover{
+    color:$green;
+  }
+  }
+  .text-corps{
+    padding:0.5em;
+    background-color:$white;
+    border-radius:5px;
+  }
+  .highlight-yellow{
+    background-color:$yellow;
+  }
+  .underline-yellow{
+    border-bottom: solid 1px $green;
+  }
+  .bold{
+    font-weight:bold
+  }
+  .font-green{
+    color:$green;
+  }
+}
