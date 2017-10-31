@@ -13,50 +13,86 @@
 }
 
 .cours-page{
-   .title-underline{
-    border-bottom: solid 2px $green;
-   }
-    h2{
-    padding-top:1em;
-    padding-bottom:0.25em;
-    font-family:$base-font;
-    text-transform: uppercase;
-    font-weight:bold;
-    font-size: 30px;
-  }
-  h3{
-   padding-top:1em;
-   font-family:$base-font;
-   text-transform: uppercase;
-   font-size: 20px;
-   font-weight:bold;
-  }
-  a{
+ .title-underline{
+  border-bottom: solid 2px $green;
+}
+h2{
+  padding-top:1em;
+  padding-bottom:0.25em;
+  font-family:$base-font;
+  text-transform: uppercase;
+  font-weight:bold;
+  font-size: 30px;
+}
+h3{
+ padding-top:1em;
+ font-family:$base-font;
+ text-transform: uppercase;
+ font-size: 20px;
+ font-weight:bold;
+}
+a{
   color:$red;
   border-bottom:solid 1px $red;
   text-decoration: none;
   &:hover{
     color:$green;
   }
+}
+img{
+  height:300px;
+}
+.text-corps{
+  padding:0.5em;
+  background-color:$white;
+  border-radius:5px;
+}
+.highlight-yellow{
+  background-color:$yellow;
+}
+.underline-yellow{
+  border-bottom: solid 1px $green;
+}
+.bold{
+  font-weight:bold
+}
+.font-green{
+  color:$green;
+}
+}
+
+.paragraphe-cours{
+  border-radius:5px;
+  padding-left:1em;
+  padding-right:1em;
+}
+
+.paragraphe-cours-inverse{
+  background-color: $gray-darker;
+  border-radius:5px;
+  padding-left:1em;
+  padding-right:1em;
+  h3{
+   color:white;
+   border-bottom: solid $green 1px;
+   padding-top:1em;
+   font-family:$base-font;
+   text-transform: uppercase;
+   font-size: 20px;
+   font-weight:bold;
+ }
+ p{
+  color:white;
+}
+.text-corps-inverse{
+ padding:0.5em;
+}
+a{
+  color:$green;
+  border-bottom:solid 1px $white;
+  text-decoration: none;
+  &:hover{
+    color:$red;
   }
-  img{
-    height:300px;
-  }
-  .text-corps{
-    padding:0.5em;
-    background-color:$white;
-    border-radius:5px;
-  }
-  .highlight-yellow{
-    background-color:$yellow;
-  }
-  .underline-yellow{
-    border-bottom: solid 1px $green;
-  }
-  .bold{
-    font-weight:bold
-  }
-  .font-green{
-    color:$green;
-  }
+}
 }
