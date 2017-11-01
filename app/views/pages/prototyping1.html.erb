@@ -97,8 +97,8 @@
       <div class="paragraphe-cours">
         <h3>9 - Les Images</h3>
         <div class="text-corps">
-          <p><span class="underline-yellow bold">Flickr</span> : <a href="https://www.flickr.com/">https://www.flickr.com/</a></p>
-          <p><span class="underline-yellow bold">500px</span> : <a href="https://500px.com/">https://www.flaticon.com/</a></p>
+          <p><span class="underline-yellow bold">Flickr</span> : <a href="https://www.flickr.com/">https://www.flickr.com/</a> site de partage de photos</p>
+          <p><span class="underline-yellow bold">500px</span> : <a href="https://500px.com/">https://www.flaticon.com/</a> site de partage de photos avec rancking</p>
           <p><span class="underline-yellow bold">Pinterest</span> : <a href="https://fr.pinterest.com/">https://fr.pinterest.com/</a> pratique pour faire des moodbards avant de vous lancer dans le dévellopement où pour montrer vos idées à une agence de dev</p>
         </div>
       </div>
@@ -108,7 +108,7 @@
         <div class="text-corps">
           <p><span class="underline-yellow bold">Sketch</span> : <a href="https://www.sketchapp.com/">https://www.sketchapp.com/</a></p>
           <p><span class="underline-yellow bold">Gimp</span> : <a href="https://www.gimp.org/">https://www.flaticon.com/</a></p>
-          <p><span class="underline-yellow bold">Photoshop</span> : <a href="http://www.adobe.com/fr/creativecloud.html ">http://www.adobe.com/fr/creativecloud.html </a></p>
+          <p><span class="underline-yellow bold">Photoshop</span> : <a href="http://www.adobe.com/fr/creativecloud.html ">http://www.adobe.com/fr/creativecloud.html </a> pensez aux fichiers amtlib ;) </p>
         </div>
       </div>
 
@@ -119,7 +119,6 @@
         <div class="text-corps">
           <p><span class="underline-yellow bold">AWWWARDS</span> : <a href="https://www.awwwards.com/">https://www.awwwards.com/</a> contest de developpeurs web front-end</p>
           <p><span class="underline-yellow bold">Betalist</span> : <a href="https://betalist.com/">https://betalist.com/</a></p>
-          <p><span class="underline-yellow bold">Pttrns</span> : <a href="pttrns.com">https://betalist.com/</a></p>
         </div>
       </div>
 
@@ -156,7 +155,7 @@
           <p><span>.Test :</span> On va tester notre value proposition pour chaqu'une des trois cibles, on va donc créer trois landings pages. On utilisera ici <a href="https://www.strikingly.com/">Strikingly</a> & <a href="https://kickofflabs.com/ ">KickOffLab</a></p>
           <p>Landing page pour les <a href="https://challenge-assurances-velo-2018-cyclosportifs-2.kickoffpages.com/">cible 1 - cyclosportifs</a>  sur KickOffLab </p>
           <p>Landing page pour les <a href="http://challengecyclosportives.strikingly.com/">cible 2 - organisateurs</a> sur Strinkingly </p>
-          <p>Landing page pour les <a href="#">cible 3 - vélocistes</a> sur Strinkingly  </p>
+          <p>Landing page pour les <a href="http://challengeassurancevelovelocistes.strikingly.com/">cible 3 - vélocistes</a> sur Strinkingly  </p>
         </div>
       </div>
 
@@ -174,6 +173,19 @@
         <div class="text-corps-inverse">
           <p>Canal d'acquisition pour la cible cyclospotifs : <a href="https://www.facebook.com/ads/manager/account/campaigns/">Facebook Ads</a></p>
           <p>Canal d'acquisition pour les cibles cyclospotifs : Base Mail récupéré à l'aide de <a href="https://chrome.google.com/webstore/detail/web-scraper/jnhgnonknehpejjnehehllkliplmbmhn">Webscraper</a> & lancement d'une campagne mail avec <a href="https://mailchimp.com/">Mailchimp</a></p>
+          <p><span class="bold">Récupération des Emails</span></p>
+          <p>1 - Aller sur Velo 101, catégorie <a href="http://www.velo101.com/cyclosport/calendrier">cyclosport</a></p>
+          <p>2 - Definir la root, ici je prends <a href="http://www.velo101.com/cyclosport/calendrier/mois:1/annee:2017">http://www.velo101.com/cyclosport/calendrier/mois:1/annee:2017</a></p>
+          <p>3 - Ensuite je crée deux selecteurs, <span class="bold">mois</span> et <span class="bold">mail</span> pour avoir la site map suivante : </p>
+          <img src="<%= image_path "prototyping-1-webscraper-1.jpg" %>" alt="" style="height:50px; padding-bottom: 1em;">
+          <p>4 - Il vous reste juste ensuite à éxécuter la routine avec Webscraper</p>
+          <p>Si vous souhaitez scrapper des choses plus complexes vous pourrez retourer tous les tutos de fomations à WebScraper <a href="http://webscraper.io/tutorials">ici</a></p>
+          <p>Si vous souhaitez extraire des mails d'un fichier text rapidement vous pouvez utiliser <a href="http://emailx.discoveryvip.com/">cet extracteur</a> c'est très utile, surtout si par exemple vous récuperer des emails directement d'un résultat de recherche Google</p>
+          <p><span class="bold">Envoi d'un mail via Mailchimp</span></p>
+          <p>1 - Créer un compte Mailchimp</p>
+          <p>2 - Créer une liste à laquel vous allez envoyer un Email, MailChhimp va automatiquement nettoyer la liste si les emails sont mals orthographiés. <br><br> Attention MailChimp ne va pas au préalable vous supprimer les emails qui vont bouncer, je vous recommande vivement d'analyser vos listes de mails scrapper avant de faire un mailing de masse avec votre nom de domaine. Si vous avez trop de bounce vous allez être identifié comme du spam et ça dégrade votre SEO. Utiliser donc <a href="https://neverbounce.com/">Neverbouce</a> avant d'envoyer vos mails ;)</p>
+          <img src="<%= image_path "prototyping-1-neverbounce.jpg" %>" alt="" style="height:120px; padding-bottom: 1em;">
+          <p>3 - Faites votre mailing et attendez vos métriques <img src="https://cdn.jsdelivr.net/emojione/assets/3.0/png/128/1f379.png" alt="" style="height:20px;"></p>
         </div>
       </div>
 
@@ -181,13 +193,6 @@
         <h3>15 - Analyser vos métrics</h3>
         <div class="text-corps">
           <p>Analyser votre taux d'activation, tant que votre taux d'activation est inférieur à 30% vous continuer à itérer </p>
-        </div>
-      </div>
-
-
-      <div class="paragraphe-cours-inverse">
-        <h3>Mise en pratique</h3>
-        <div class="text-corps-inverse">
         </div>
       </div>
 
