@@ -4,4 +4,6 @@ skip_before_action :authenticate_user!
   end
   def prototyping1
   end
+  def prototyping2
+  end
 end

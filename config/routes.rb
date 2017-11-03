@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   resources :cours, only: [:index]
   get "/prototyping1" => "pages#prototyping1"
+  get "/prototyping2" => "pages#prototyping2"
 end
