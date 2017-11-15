@@ -53,6 +53,9 @@ img{
 .underline-yellow{
   border-bottom: solid 1px $green;
 }
+.underline-green{
+  border-bottom: solid 1px $green;
+}
 .bold{
   font-weight:bold
 }
@@ -76,6 +79,11 @@ img{
   border-radius:5px;
   padding-left:1em;
   padding-right:1em;
+  position: relative;
+  margin-top:5px;
+  img{
+    padding-bottom:1em;
+  }
   h3{
    color:white;
    border-bottom: solid $green 1px;
@@ -99,4 +107,13 @@ a{
     color:$red;
   }
 }
+}
+
+xmp {
+  background-color: $gray-medium;
+  color:$gray;
+  font-weight:bold;
+  padding: 1em;
+  white-space: pre-wrap;
+  border-radius: 10px;
 }
