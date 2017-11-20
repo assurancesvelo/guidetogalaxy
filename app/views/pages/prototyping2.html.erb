@@ -16,14 +16,14 @@
       <div class="paragraphe-cours">
         <h3>1 - But du cours</h3>
         <div class="text-corps">
-          <p>Les but de ce cours est de commencer à vous faire réaliser des test A/B de manière organisée efficace. Pour cela on va utiliser un module VWO, vous pouvez aussi utiliser Optimizely mais celui ci est payant après 30 jours (l'UX est par contre meilleur que VWO). Nous allons maintenant abandonner Strikingly et tous les autres modules non payants de ce type, pour partir sur un site codé de A-Z qui sera plus efficace pour implémenter les modules de tracking futurs pour analyser vos ROI.</p>
+          <p>Les but de ce cours est de commencer à vous faire <span class="highlight-yellow">réaliser des tests A/B</span> de manière organisée efficace. Pour cela on va utiliser un module VWO, vous pouvez aussi utiliser Optimizely mais celui ci est payant après 30 jours (l'UX est par contre meilleur que VWO). Nous allons maintenant abandonner Strikingly et tous les autres modules non payants de ce type, pour partir sur un site codé de A-Z qui sera plus efficace pour implémenter les modules de tracking futurs pour analyser vos ROI.</p>
         </div>
       </div>
 
       <div class="paragraphe-cours">
         <h3>2 - L'A/B testing c'est quoi ?</h3>
         <div class="text-corps">
-          <p>Beaucoup de choses sont contre intuitives dans le business. L'idée est donc de vous vixer des hypothèse, par exemple : changer votre value proposition, changer un boutton etc ... et de voir ce qui marche le mieux</p>
+          <p><span class="highlight-yellow">Beaucoup de choses sont contre intuitives dans le business</span>. L'idée est donc de vous vixer des hypothèse, par exemple : changer votre value proposition, changer un boutton etc ... et de voir ce qui marche le mieux</p>
           <br>
           <p>Cas d'étude sympa, sur les experinces d'A/B testing menées lors de la <a href="https://blog.optimizely.com/2010/11/29/how-obama-raised-60-million-by-running-a-simple-experiment/">campagne de obama</a> en 2008 </p>
           <br>
@@ -36,22 +36,22 @@
       <div class="paragraphe-cours">
         <h3>3 - Faire un bon test A/B</h3>
         <div class="text-corps">
-          <p>1 - Définir une métrique de succès quantifiable : généralement on prendra comme funnel visites sur le <span class="highlight-yellow">site -> sign up -> money </span></p>
+          <p>1 - <span class="highlight-yellow">Définir une métrique de succès quantifiable</span> : généralement on prendra comme funnel visites sur le <span class="highlight-yellow">site -> sign up -> money </span></p>
           <img src="<%= image_path "prototyping-2-1.jpg" %>" alt="">
-          <p>2 - Explorer avant de rafiner : faire plein de textes d'exploration pour voir des divergens de résultats importants, puis quand vous arrivez à trouver une bonne voie alors à ce moment là vous rafinier</p>
+          <p>2 - <span class="highlight-yellow">Explorer avant de rafiner</span> : faire plein de textes d'exploration pour voir des divergens de résultats importants, puis quand vous arrivez à trouver une bonne voie alors à ce moment là vous rafinier</p>
           <img src="<%= image_path "prototyping-2-2.jpg" %>" alt="">
           <p>3 - Etre minimaliste et réduire le choix : un seu call to action, formulaire simple etc ...</p>
           <p>4 - Les mots sont importants : concentrez vous sur vos call to action</p>
           <img src="<%= image_path "prototyping-2-3.jpg" %>" alt="">
           <p>5 - Echouer rapidement</p>
-          <p>6 - Commencer dès maintenant, plus vite vous faiterais de tests plus vite vous pourrez voir ce qui marche ou non </p>
+          <p>6 - <span class="highlight-yellow">Commencer dès maintenant</span>, plus vite vous faiterais de tests plus vite vous pourrez voir ce qui marche ou non </p>
         </div>
       </div>
 
       <div class="paragraphe-cours">
         <h3>4 - Optimizely</h3>
         <div class="text-corps">
-        <p>Le but d'Optimizely et Wvo est de vous aider à faire des tests A/B sur votre site. Vous créer pour cela une expérience qui va comprendre des vatiations de votre site et des events. Optimizely va ensuite analyser quel variation est la plus pertinente en terme de conversions</p>
+          <p>Le but d'<a href="https://app.optimizely.com/">Optimizely</a> et <a href="https://vwo.com/">VWO</a> est de vous aider à <span class="highlight-yellow">faire des tests A/B</span> sur votre site. Vous créer pour cela une expérience qui va comprendre des vatiations de votre site et des events. Optimizely va ensuite analyser quel variation est la plus pertinente en terme de conversions</p>
         </div>
       </div>
 
@@ -170,7 +170,7 @@
         </div>
 
         <div class="paragraphe-cours-inverse">
-          <h3>Mise en pratique -  Wufoo</h3>
+          <h3>Mise en pratique -  Fromspree</h3>
           <div class="text-corps-inverse">
             <p>1 - Intégration de <a href="https://formspree.io/">Fromspree</a></p>
             <p>2 - Aller sut le site et copier coller le code suivant</p>
@@ -257,61 +257,54 @@
       <div class="paragraphe-cours">
         <h3>8 - Acheter votre nom de domaine</h3>
         <div class="text-corps">
+          <p>On va maitenant créer une URL propre pour votre site (normalement à minima vous avez une URL GitHub), afin de pouvoir faire tous les test A/B via la même URL</p>
         </div>
       </div>
 
       <div class="paragraphe-cours-inverse">
         <h3>Mise en pratique</h3>
         <div class="text-corps-inverse">
+          <p>1 - acheter un nom de domaine sur <a href="https://www.ovh.com/fr/">OVH</a></p>
+          <p>2 - Ajoutez (ou modifiez) un champ CNAME à la zone DNS sur OVH avec : en sous-domaine: www et en destination en destination: votre_username_github.github.io.</p>
+          <p>3 - Puis ajoutez un fichier CNAME dans votre code (à la racine du projet) contenant une seule ligne avec votre domaine www.votredomaine.com</p>
+          <p> <a href="https://www.lewagon.com/fr/blog/siteweb-domaine-mail-personalise">Ce tuto</a> vous explique comment faire</p>
         </div>
       </div>
 
+
       <div class="paragraphe-cours">
-        <h3>9 - Mettre votre site en ligne</h3>
+        <h3>9 - Configurer une campagne de test sur Optimizely ou VWO</h3>
         <div class="text-corps">
         </div>
       </div>
 
+
       <div class="paragraphe-cours-inverse">
         <h3>Mise en pratique</h3>
         <div class="text-corps-inverse">
+          <p>1 - Définir une expérience</p>
+          <p>2 - Definir vous events à tracker</p>
+          <p>3 - Lancer l'expérience</p>
         </div>
       </div>
 
+
       <div class="paragraphe-cours">
-        <h3>10 - Lancer une pub</h3>
+        <h3>10 - Refaire une stratégie d'acquisition comme dans le cours précédent</h3>
         <div class="text-corps">
         </div>
       </div>
 
-      <div class="paragraphe-cours-inverse">
-        <h3>Mise en pratique</h3>
-        <div class="text-corps-inverse">
-        </div>
-      </div>
 
       <div class="paragraphe-cours">
-        <h3>11 - Mesurer vos metrics</h3>
+        <h3>11 - Mesurer vos metrics d'activation</h3>
         <div class="text-corps">
         </div>
       </div>
 
-      <div class="paragraphe-cours-inverse">
-        <h3>Mise en pratique</h3>
-        <div class="text-corps-inverse">
-        </div>
-      </div>
 
 
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <br><br><br><br>
 
 
 
