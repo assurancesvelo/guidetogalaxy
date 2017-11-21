@@ -6,4 +6,6 @@ skip_before_action :authenticate_user!
   end
   def prototyping2
   end
+  def statistiques
+  end
 end
