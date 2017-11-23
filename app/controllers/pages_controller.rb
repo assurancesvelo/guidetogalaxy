@@ -8,4 +8,6 @@ skip_before_action :authenticate_user!
   end
   def statistiques
   end
+  def aarrr
+  end
 end
