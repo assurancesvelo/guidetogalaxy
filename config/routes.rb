@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get "/prototyping1" => "pages#prototyping1"
   get "/prototyping2" => "pages#prototyping2"
   get "/aarrr" => "pages#aarrr"
+  get "/googleanalytics" => "pages#googleanalytics"
 end

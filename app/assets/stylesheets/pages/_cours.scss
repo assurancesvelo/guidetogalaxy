@@ -19,6 +19,11 @@
 .title-underline-purple{
   border-bottom: solid 2px $purple;
 }
+
+.title-underline-red{
+  border-bottom: solid 2px $red;
+}
+
 h2{
   padding-top:1em;
   padding-bottom:0.25em;
@@ -61,6 +66,10 @@ img{
 }
 .underline-purple{
   border-bottom: solid 1px $purple;
+}
+
+.underline-red{
+  border-bottom: solid 1px $red;
 }
 
 .bold{
