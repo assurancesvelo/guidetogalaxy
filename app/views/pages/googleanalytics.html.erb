@@ -11,9 +11,283 @@
       </div>
       <p><br>L'idée de ce cours est de configurer proprement google analytics afin de pouvoir raisonner en deep dive et maximiser votre ROI</p>
 
+      <div class="paragraphe-cours">
+        <h3>1 - Quel est l’intérêt de Google Analytics ?</h3>
+        <div class="text-corps">
+          <p>Se <span class="highlight-yellow">fixer une hypothèse</span> , <span class="highlight-yellow">définir un objectif</span> et regarder si ce que l’on fait marche ou non. Par exemple : "je souhaite avoir 50% des visiteurs de mon site qui télécharge mon application" ou encore "je souhaite avoir 15% des utilisateurs se connectent à mon application tous les jours"</p>
+        </div>
+      </div>
+
+      <div class="paragraphe-cours">
+        <h3>2 - Comment marche Google Analytics ?</h3>
+        <div class="text-corps">
+          <p>On met un bout de code Javascript sur toute les pages de votre site internet qui va envoyer des informations à GA lorsqu’un utilisateur se connecter ou fait une action sur notre site internet. Pour GA chaque utilisateur est un cookie</p>
+        </div>
+      </div>
+
+      <div class="paragraphe-cours">
+        <h3>3 - Architecture de Google Analytics</h3>
+        <div class="text-corps">
+          <p><span class="underline-red bold">Compte GA :</span> Compte relié à votre compte Gmail, qui va vous permettre d'avoir acces à GA</p>
+          <p><span class="underline-red bold">Propriétés :</span> Les différents site reliés à votre compte GA</p>
+          <p><span class="underline-red bold">Vues :</span> Différentes vues associés à votre site où vous pouvez appliquer des filtres par exemple sur les IP. Je vous conseil d’avoir une vue avec toutes les données et une vue de production. </p>
+        </div>
+      </div>
+
+      <div class="paragraphe-cours">
+        <h3>4 - Présentation de l'interface</h3>
+        <div class="text-corps">
+          <p><span class="underline-red bold">Audience :</span> Toutes les données concernant vos visiteurs</p>
+          <p><span class="underline-red bold">Acquisition :</span> Pour savoir d’où vient votre cible, campagne adwords, email, FacebookAds etc ….</p>
+          <p><span class="underline-red bold">Comportement :</span> Savoir où les personnes vont sur votre site et comment elles naviguent. </p>
+          <p><span class="underline-red bold">Conversion :</span> Vous informe de l’état de vos conversions </p>
+          <p><span class="bold">Attentions aux données :</span> <span class="highlight-yellow">En fonction de la boite que vous avez les données peuvent être très différentes</span> et de ce que vous checker. Si vous avez une boite SAAS il faut vraiment avoir des données qui traduisent de la récurrence. Si vous avez seulement une landing page vous allez avoir un grand taux de rebond qui ne traduit pas forcement un non intérêt pour votre boîte. Ici dans les assurances il y a peu de visites récurrentes en effet la personne paye une fois puis ne revient plus sur le site. </p>
+        </div>
+      </div>
+
+
+      <div class="paragraphe-cours">
+        <h3>5 - Audience</h3>
+        <div class="text-corps">
+          <p>On retrouve ici toutes les informations sur la <span class="highlight-yellow">nature des visiteurs</span> à savoir : données démographiques, la valeur des clients actifs, <br><br> Une session pour google Analytics c’est une personne qui vient sur votre site qui a un certain nombre d’interactions et qui repart. Si un utilisateur reste inactif plus de 30 min la session est devient nulle.</p>
+          <p><span class="bold">Returning visitor :</span> visiteur qui a visité il y a maximum deux ans sur le site</p>
+          <p><span class="bold">Not set :</span> attention c’est un robot, où quelque chose dont on ne se sait pas d’où ils viennent. </p>
+          <p>Ensuite, vous pouvez descendre les données une par une (Données démographiques, Centres d’intérêts, données géographiques, comportement, technologie, mobile, analyse comparatives) </p>
+        </div>
+      </div>
+
+      <div class="paragraphe-cours">
+        <h3>6 - Acquisition</h3>
+        <div class="text-corps">
+        <p>Cette interface vous présente par quel canal d’acquisition vos visiteurs sont venus quelque soit :</p>
+        <p><span class="underline-red bold">La source :</span>  Adwords, Direct, Facebook etc … <br><br> Par Direct on sous entend que google n’est pas arrivé à attribuer la source d’acquisition de l’utilisateur, dans votre tête ça doit être un peu comme not set. Ils ont tapé directement l’url ils on cliqué depuis un lien pdf, ça peut être un robot. Du coup penser à filtrer vos IP pour avoir de vraies données de production</p>
+        <p><span class="underline-red bold">Le support :</span> cpc, organic, mail etc ...</p>
+        <p><span class="underline-red bold">Les mots clefs :</span> De recherche des visiteurs</p>
+        <p>Vous disposez d’une partie plus détaillée pour tout ce qui est : Adwords, Réseaux sociaux et campagnes de marketing.</p>
+        <p>C'est partie de google analytics est importante car vous allez voir ici quel sont les canaux d'acquisition les plus rentables et donc ainsi afiner votre stratégie d'acquisition</p>
+        </div>
+      </div>
+
+
+      <div class="paragraphe-cours">
+        <h3>6 - Comportement</h3>
+        <div class="text-corps">
+        <p>Que fait l’utilisateur sur le site internet :</p>
+        <p>Vous allez donc retrouver l’ensemble des pages vues sur le site internet, avec le nombre de vues. </p>
+        <p>Vous pouvez aussi retrouver le flux du comportement des utilisateurs.</p>
+        <p>Le plus important dans cette section ce sont <span class="bold">les pages vues </span>et <span class="bold">les événements</span> que nous allons voir après.</p>
+        </div>
+      </div>
+
+      <div class="paragraphe-cours">
+        <h3>7 - Les Objectifs </h3>
+        <div class="text-corps">
+        <p>On peut définir des objectifs, laisser un email ou télécharger un pdf et on peut voir ensuite sur l’ensemble des sessions le nombre qui a rempli l’objectif.</p>
+        <p><span class="underline-red">Exemple d’objectifs :</span></p>
+        <ul>
+          <li>
+            <p>Création d’un compte client</p>
+          </li>
+          <li>
+            <p>Achat d’un produit</p>
+          </li>
+          <li>
+            <p>Téléchargement d’un contenu</p>
+          </li>
+          <li>
+            <p>Partage sur un réseau social </p>
+          </li>
+          <li>
+            <p>Inscription à une newsletter </p>
+          </li>
+          <li>
+            <p>Durée sur une page etc … </p>
+          </li>
+        </ul>
+        <p>Vous pouvez définir aussi un tunnel de conversion par objectif spécifique ce qui vous permet de voir à quel moment les gens abandonnent dans la réalisation de l’objectif. </p>
+        <p>Il existe quatre types d'objectifs, dont voici la liste :</p>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Type d'objectif </th>
+              <th scope="col">Description</th>
+              <th scope="col">Exemple</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Destination</td>
+              <td>Chargement d'un emplacement spécifique  </td>
+              <td>Page ou écran d'application de remerciement suite à une inscription</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Durée</td>
+              <td>Sessions d'une durée minimale spécifique  </td>
+              <td>10 minutes ou plus passées sur un site d'assistance</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Pages/Écrans par session  </td>
+              <td>Un utilisateur consulte un nombre spécifique de pages ou d'écrans.  </td>
+              <td>Cinq pages ou écrans ont été chargés.</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Événement</td>
+              <td>Déclenchement d'une action définie comme un événement </td>
+              <td>Recommandation sur un réseau social, lecture d'une vidéo, clic sur une annonce</td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="paragraphe-cours">
+        <h3>8 - Les métriques importantes</h3>
+        <div class="text-corps">
+
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Metrique</th>
+                <th scope="col">Définition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Sessions</td>
+                <td>Les sessions représentent le nombre de sessions individuelles initiées par l'ensemble des utilisateurs de votre site</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Utilisateurs</td>
+                <td>Utilisateurs comptés de manière unique sur votre site</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Pages vues</td>
+                <td>Nombre de pages consultées sur votre site</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Pages / Session </td>
+                <td>Nombre de page consultées par session, cette mérique n'est pas intéréssante dans le cas d'une landing page</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Durée moyenne par sessions</td>
+                <td>Temps que reste un utilisateur sur le site par session</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Taux de rebond</td>
+                <td>Utilisateur n'ayant consulté qu'une seule page sur votre site</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Taux de conversion</td>
+                <td>Nombre d'utilisateurs convertis / Nombre total d'utilisateurs</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Réalisation de objectif</td>
+                <td>Nombre de fois où l'objectif à été réalisé</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Valeur de l’objectif</td>
+                <td>Valeur de votre objectis calculé sur le nombre de réalisation de objectif</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Clic</td>
+                <td>Nombre de clic effectué sur une pub par exemple</td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Coût</td>
+                <td>Coût d'une campagne de PUB, Adwords par exemple</td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>CPC</td>
+                <td>Cout Par Clic, cout que que coute un clic</td>
+              </tr>
+              <tr>
+                <th scope="row">13</th>
+                <td>CPA</td>
+                <td>Cout Par Acquisition, cout que coûte une acquisition ou la rélisation d'un objectifs.</td>
+              </tr>
+              <tr>
+                <th scope="row">14</th>
+                <td>ROI</td>
+                <td>Retour sur investissement, normalement calculé comme suit : ((CA de l'acquisition)-(Cout de l'acquisition))/(Cout de l'acquisition))</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="title-underline-red">
+        <h2>TP</h2>
+      </div>
 
 
 
+      <div class="paragraphe-cours">
+        <h3>1 - Implémenter GA</h3>
+        <div class="text-corps">
+        </div>
+      </div>
+      <div class="paragraphe-cours-inverse">
+        <h3>Mise en pratique</h3>
+        <div class="text-corps-inverse">
+          <p>1 - Vous ouvrir un compte GA</p>
+          <p>2 - Aller dans Admin - dans la colonne propirété choisir créer une propriété</p>
+          <p>3 - Insérer le code de suivi dans la balise head de votre site</p>
+        </div>
+      </div>
+
+
+
+      <div class="paragraphe-cours">
+        <h3>2 - Créer une vue de production avec les IP filtrés.</h3>
+        <div class="text-corps">
+          <p>Il est important de créer une vue de travail et une vue de production où vous allez filter votre IP pour éviter de polluer vos données</p>
+        </div>
+      </div>
+      <div class="paragraphe-cours-inverse">
+        <h3>Mise en pratique</h3>
+        <div class="text-corps-inverse">
+          <p>1 - Aller dans Admin - dans la colonne propriété choisir créer une Vue</p>
+          <p>2 - Choisir Filtres et ajouter un filtre</p>
+          <p>3 - Filtrer par IP, vous pouvez trouver votre IP ici : <a href="http://www.mon-ip.com/">http://www.mon-ip.com/</a></p>
+        </div>
+      </div>
+
+
+
+      <div class="paragraphe-cours">
+        <h3>3 - Configurer un événement</h3>
+        <div class="text-corps">
+        </div>
+      </div>
+      <div class="paragraphe-cours-inverse">
+        <h3>Mise en pratique</h3>
+        <div class="text-corps-inverse">
+          <p>1 - Aller dans Admin - dans la colonne propriété choisir créer une Vue</p>
+          <p>2 - Choisir Filtres et ajouter un filtre</p>
+          <p>3 - Filtrer par IP, vous pouvez trouver votre IP ici : <a href="http://www.mon-ip.com/">http://www.mon-ip.com/</a></p>
+        </div>
+      </div>
 
 
 
