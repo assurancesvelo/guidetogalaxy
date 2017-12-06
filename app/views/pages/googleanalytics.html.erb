@@ -21,7 +21,7 @@
       <div class="paragraphe-cours">
         <h3>2 - Comment marche Google Analytics ?</h3>
         <div class="text-corps">
-          <p>On met un bout de code Javascript sur toute les pages de votre site internet qui va envoyer des informations à GA lorsqu’un utilisateur se connecter ou fait une action sur notre site internet. Pour GA chaque utilisateur est un cookie</p>
+          <p>On met un bout de code Javascript sur toute les pages de votre site internet qui va envoyer des informations à GA lorsqu’un utilisateur se connecter ou fait une action sur notre site internet. <span class="highlight-yellow">Pour GA chaque utilisateur est un cookie</span></p>
         </div>
       </div>
 
@@ -147,7 +147,15 @@
       </div>
 
       <div class="paragraphe-cours">
-        <h3>8 - Les métriques importantes</h3>
+        <h3>8 - Modèle d'attribution</h3>
+        <div class="text-corps">
+          <p><span class="underline-red bold">Définition Google :</span> Un modèle d'attribution est une règle (ou un ensemble de règles) qui détermine la façon dont le crédit des ventes et des conversions est attribué aux points de contact dans les chemins de conversion. Par exemple, le modèle Dernière interaction, dans Analytics, affecte 100 % du crédit aux points de contact finaux (c'est-à-dire les clics) qui précèdent immédiatement les ventes ou les conversions. En revanche, le modèle Première interaction affecte 100 % du crédit aux points de contact au début des chemins de conversion.</p>
+          <p><a href="https://support.google.com/analytics/answer/1662518?hl=fr">Liste des modèles d'attributions</a></p>
+        </div>
+      </div>
+
+      <div class="paragraphe-cours">
+        <h3>9 - Les métriques importantes</h3>
         <div class="text-corps">
 
 
@@ -228,7 +236,7 @@
               <tr>
                 <th scope="row">14</th>
                 <td>ROI</td>
-                <td>Retour sur investissement, normalement calculé comme suit : ((CA de l'acquisition)-(Cout de l'acquisition))/(Cout de l'acquisition))</td>
+                <td>Retour sur investissement, normalement calculé comme suit : (Marge)/(Cout de l'acquisition))</td>
               </tr>
             </tbody>
           </table>
@@ -247,9 +255,9 @@
         <div class="text-corps">
         </div>
       </div>
-      <div class="paragraphe-cours-inverse">
+      <div class="paragraphe-cours-inverse-red">
         <h3>Mise en pratique</h3>
-        <div class="text-corps-inverse">
+        <div class="text-corps-inverse-red">
           <p>1 - Vous ouvrir un compte GA</p>
           <p>2 - Aller dans Admin - dans la colonne propirété choisir créer une propriété</p>
           <p>3 - Insérer le code de suivi dans la balise head de votre site</p>
@@ -264,7 +272,7 @@
           <p>Il est important de créer une vue de travail et une vue de production où vous allez filter votre IP pour éviter de polluer vos données</p>
         </div>
       </div>
-      <div class="paragraphe-cours-inverse">
+      <div class="paragraphe-cours-inverse-red">
         <h3>Mise en pratique</h3>
         <div class="text-corps-inverse">
           <p>1 - Aller dans Admin - dans la colonne propriété choisir créer une Vue</p>
@@ -272,23 +280,138 @@
           <p>3 - Filtrer par IP, vous pouvez trouver votre IP ici : <a href="http://www.mon-ip.com/">http://www.mon-ip.com/</a></p>
         </div>
       </div>
-
-
 
       <div class="paragraphe-cours">
         <h3>3 - Configurer un événement</h3>
         <div class="text-corps">
         </div>
       </div>
-      <div class="paragraphe-cours-inverse">
+      <div class="paragraphe-cours-inverse-red">
         <h3>Mise en pratique</h3>
         <div class="text-corps-inverse">
-          <p>1 - Aller dans Admin - dans la colonne propriété choisir créer une Vue</p>
-          <p>2 - Choisir Filtres et ajouter un filtre</p>
-          <p>3 - Filtrer par IP, vous pouvez trouver votre IP ici : <a href="http://www.mon-ip.com/">http://www.mon-ip.com/</a></p>
+          <p>1 - Ajouter un event à une balise a</p>
+          <p>Les évents ce codent de la manière ci dessous</p>
+          <xmp>
+            ga(‘send’, ‘event’,
+            catégorie,   <- ‘Video’
+            action,      <- ‘Play’
+            label,        <- ‘My first drive’
+            value,         <- ‘0’ valeur monétaire par exemple
+            interaction  <- ‘true’ si on veut que l’event soit utilisé dans le calcul des durée et des sessions.
+            );
+          </xmp>
+          <p>Vous pouvez donc implémenter un évènement de la manière suivante</p>
+          <xmp>
+            <a href="#" class="btn btn-primary" onClick="ga('send', 'event', 'button', 'click', 'button-test');">test button</a>
+          </xmp>
+          <p>2 - Faire un click sur le bouton et regarder l'evenement dans la section "Comportement" de GA</p>
         </div>
       </div>
 
+
+
+      <div class="paragraphe-cours">
+        <h3>3 - Configurer un Objectifs</h3>
+        <div class="text-corps">
+        </div>
+      </div>
+      <div class="paragraphe-cours-inverse-red">
+        <h3>Mise en pratique</h3>
+        <div class="text-corps-inverse">
+          <p>1 - Aller dans Admin et selectionner votre vue</p>
+          <p>2 - Ajouter un objectif</p>
+          <p>3 - Choisir l'objectifs que vous souhaitez. Je vous recommande dans un premier temps de prendre l'objectifs de type destination où vous indiquez l'url de la page que vous souhaitez suivre. Vous pouvez choisir la desination "egale à" sauf si votre URL est dynamique</p>
+          <p>4 - Option Entonnoir de conversion, à choisir si vous voulez annalyser un tunnel de conversion spécifique à votre objectif, cela va vous permettre de voir où peuvent se passer certains problèmes</p>
+          <p>5 - Vérivier votre objectifs avant de le valider</p>
+        </div>
+      </div>
+
+
+      <div class="paragraphe-cours">
+        <h3>4 - Mettre en place le commerce électronique </h3>
+        <div class="text-corps">
+        </div>
+      </div>
+      <div class="paragraphe-cours-inverse-red">
+        <h3>Mise en pratique</h3>
+        <div class="text-corps-inverse">
+          <p>1 - Aller dans admin, puis votre vue, puis cliquer sur paramètres du commerce électronique</p>
+          <p>2 - Activer "État" et "Activer les produits associé", puis cliquer sur Etape suivante</p>
+          <p>3 - Il faut ensuite renvoyer les données associées au produit acheté lorsqu'une vente est effectuée. La doc de GA <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/ecommerce">se trouve ici</a></p>
+          <p>L'idée est que lorsque un utilisateur se rend sur votre page merci vous renvoyez les données à GA</p>
+          <xmp>
+            <script>
+            (function() {
+              ga('require', 'ecommerce');
+              ga('ecommerce:addTransaction', {
+                'id': '1',
+                'revenue': '40',
+              });
+              ga('ecommerce:addItem', {
+                'id': '1',
+                'name': 'Basket',
+                'category': 'Chaussures',
+                'price': '150',
+                'quantity': '1'
+              });
+              ga('ecommerce:send');
+            })();
+            </script>
+          </xmp>
+        </div>
+      </div>
+
+
+      <div class="paragraphe-cours">
+        <h3>5 - Mettre en place un bon Dashboard</h3>
+        <div class="text-corps">
+        </div>
+      </div>
+      <div class="paragraphe-cours-inverse-red">
+        <h3>Mise en pratique</h3>
+        <div class="text-corps-inverse">
+          <p>L'idée est de faire du deep dive, on va donc configurer un Dashboard avec toutes les variables de suivi depuis l'acquisiton au revenu</p>
+          <table class="table" style="background-color:#333333; color: white;">
+            <thead>
+              <tr>
+                <th scope="col">Source</th>
+                <th scope="col">Clics</th>
+                <th scope="col">Coût</th>
+                <th scope="col">CPC</th>
+                <th scope="col">Nombre de ventes</th>
+                <th scope="col">CPA Vente</th>
+                <th scope="col">ROI</th>
+                <th scope="col">Marge</th>
+              </tr>
+            </thead>
+          </table>
+        <p>1 - Créer vos variables</p>
+        <p>Aller dans Admin -> Vue -> Selectionner "Statistique Calculée"</p>
+        <p>Créer une nouvelle Statistique Calculée, attention à bien definir si vous avez une devise, une nombre flottant</p>
+        <p>2 - Créer votre Dashboard</p>
+        <p>Aller dans personalisation -> Rapports personalisées -> Nouveau rapport personalisé</p>
+        <p>Vous indiquez vos groupes statistiques : CPC, CPA, Clic,Statistique Calculée etc...</p>
+        <p>Vous indiquez votre dimension : Source</p>
+        </div>
+      </div>
+
+      <div class="paragraphe-cours">
+        <h3>6 - UTM de pour traquer vos actions</h3>
+        <div class="text-corps">
+        </div>
+      </div>
+      <div class="paragraphe-cours-inverse-red">
+        <h3>Mise en pratique</h3>
+        <div class="text-corps-inverse">
+        <p>Rendez vous sur <a href="https://ga-dev-tools.appspot.com/campaign-url-builder/">Campaign URL Builder</a></p>
+        <p>Les Url que vous allez definir ici vont vous servir à traquer si vos campagne de pub sur le net sont efficaces, mais aussi à intégrer des paramètre pour faire des test A/B sur Optimizely ou de faire de l'affichage spécifique aux visiteurs de votre site via une pub donnée. </p>
+        </div>
+      </div>
+
+
+      <div class="paragraphe-cours">
+        <h3>7 - Lancer une campagne d'acquisition</h3>
+      </div>
 
 
       <br>
