@@ -24,16 +24,16 @@
         <h3>2 - L'A/B testing c'est quoi ?</h3>
         <div class="text-corps">
           <p><span class="highlight-yellow">Beaucoup de choses sont contre intuitives dans le business</span>. L'idée est donc de vous vixer des hypothèse, par exemple : changer votre value proposition, changer un boutton etc ... et de voir ce qui marche le mieux</p>
-          <br>
-          <p>Cas d'étude sympa, sur les experinces d'A/B testing menées lors de la <a href="https://blog.optimizely.com/2010/11/29/how-obama-raised-60-million-by-running-a-simple-experiment/">campagne de obama</a> en 2008 </p>
-          <br>
-          <p>Présentation de l'A/B testing par le CEO d'Optimizely</p>
+          <p><span class="bold underline-yellow">Présentation de l'A/B testing par le CEO d'Optimizely</span></p>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/Eh00PoR76NY" frameborder="0" allowfullscreen></iframe>
-          <br>
+          <br><br>
+          <p>Cas d'étude sympa, sur les experinces d'A/B testing menées lors de la <a href="https://blog.optimizely.com/2010/11/29/how-obama-raised-60-million-by-running-a-simple-experiment/">campagne de obama</a> en 2008 </p>
         </div>
       </div>
 
-      <div class="paragraphe-cours">
+
+
+<!--       <div class="paragraphe-cours">
         <h3>3 - Faire un bon test A/B</h3>
         <div class="text-corps">
           <p>1 - <span class="highlight-yellow">Définir une métrique de succès quantifiable</span> : généralement on prendra comme funnel visites sur le <span class="highlight-yellow">site -> sign up -> money </span></p>
@@ -46,22 +46,129 @@
           <p>5 - Echouer rapidement</p>
           <p>6 - <span class="highlight-yellow">Commencer dès maintenant</span>, plus vite vous faiterais de tests plus vite vous pourrez voir ce qui marche ou non </p>
         </div>
-      </div>
+      </div> -->
 
       <div class="paragraphe-cours">
-        <h3>4 - Synthèse sur les tests A/B</h3>
+        <h3>3 - Les bonnes méthodes d’AB testing</h3>
+        <div class="text-corps">
+          <p><span class="bold underline-yellow">1) Mettre son ego de coté :</span> en effet beaucoup de choses sont contre intuitives, vous pouvez passer des heures dans l’équipe à savoir si une version, un pricing ou une feature est meilleure que l’autre. L’idée est donc d’éviter de perdre du temps, de mettre son ego de coté et de faire des tests.</p>
+          <br>
+          <p><span class="bold underline-yellow">2) Définir une expérience quantifiable :</span> vous faites un test sur quelque chose (design, text, …) dans le but d’optimiser une variable (ex: inscription à un formulaire, vente d’un produit)</p>
+          <br>
+          <p><span class="bold underline-yellow">3) Raisonner au maximum en deep dive :</span> généralement on prendra comme funnel visites sur le site -> sign up -> money</p>
+          <br>
+          <p><span class="bold underline-yellow">4) Explorer avant de raffiner :</span> tester en premier des choses très différentes et très radicales, par exemple une grande et longue home page et une home page sans scroll avec une phrase et un bouton s’inscrire. Ensuite une fois que vous avez une version qui est bien meilleure que l’autre vous pouvez raffiner et rentrer dans une logique d’optimisation. </p>
+          <img src="<%= image_path "prototyping-2-2.jpg" %>" alt="">
+          <br>
+          <p><span class="bold underline-yellow">5) Faire des test A/B sur de longue période :</span> à minima faire des tests A/B sur une semaine (le comportement des gens peut vraiment changer entre le lundi et le dimanche)  et faire attention aux facteurs extérieurs comme Noel, le mois d’Aout etc … </p>
+          <br>
+          <p><span class="bold underline-yellow">6) Faire des test A/B sur des populations assez grande :</span> utiliser les outils vu dans le cours de statistique pour quantifier le nombre de personnes pour connaitre le nombre de personne à avoir au minimum pour juger si le test est assez fiable</p>
+          <br>
+          <p><span class="bold underline-yellow">7) Echouer et documenter les échecs :</span> au début vous aller avoir beaucoup d’échecs avant de trouver des choses qui marchent. Il est important de documenter tous les échecs pour savoir toujours au sein de l’équipe ce qui marche ou non. Ca évitera notamment de refaire des expériences inutiles. </p>
+          <br>
+          <p><span class="bold underline-yellow">8) Faire de l’A/B testing de manière quotidienne :</span> Il faut qu’une personne de l’équipe soit en charge des test de manière récurrente. Il faut passer du temps tous les jours à travailler votre home page à savoir ce qui peut être ajouter, enlever. Les tests à mener et les faire. </p>
+          <br>
+          <p><span class="bold underline-yellow">9) Cumuler les réussites :</span> Ce sont les petites réussites cumulées qui vont vous donner de grands résultats ne vus décourager pas ;) </p>
+          <br>
+          <p><span class="bold underline-yellow">10) Attention à l’UX :</span> L’UX ne fait pas tout, ce n’est pas forcément les site les mieux fait qui convertissent le mieux. Il faut que votre site soit en adéquation avec votre cible.</p>
+          <br>
+          <p><span class="bold underline-yellow">11) Attention à la sur optimisation :</span> Il faut que vous restiez concentrer sur le fait que la métrique à regarder principalement est la métrique la plus en aval possible. En effet vous pouvez avoir votre taux d’engagement qui explose et vos ventes qui stagnes. Cela vient du fait que vous suscitez l’intérêt des gens mais que vos prospects sont donc de moins bonne qualité. </p>
+          <br>
+          <p><span class="bold underline-yellow">12) Copier ! </span>Si vous avez des doutes inspirez vous des sites de grandes marques, Fb, Google etc.. qui peuvent avoir déjà fait des test en amont et qui sont très fiables étant donnés qu’ils on beaucoup de data.</p>
+      </div>
+
+
+
+      <div class="paragraphe-cours">
+        <h3>4 - Quelques cas à connaitres</h3>
+        <div class="text-corps">
+          <p><span class="bold underline-yellow">1) Scroller pour un formulaire c’est le drame !</span> Si vous mettez un formulaire en bas de page il vous faut un bouton sur le Header ou quelque chose pour aller directement au formulaire.</p>
+          <br>
+          <p><span class="bold underline-yellow">2) Les mots comptent :</span> </p>
+          <img src="<%= image_path "prototyping-2-6.jpg" %>" alt="">
+          <br>
+          <img src="<%= image_path "prototyping-2-3.jpg" %>" alt="">
+          <br>
+          <p><span class="bold underline-yellow">3) Enlever du texte et des images :</span> souvent enlever des chose sur votre landing est mieux que d’en rajouter. Tout dépend de votre cible mais du manière générale, il faut arriver à concentrer l’utilisateur en un minimum de temps sur l’information clef.</p>
+          <br>
+          <p><span class="bold underline-yellow">4) Mettre les informations importantes en gras :</span> essayer au maximum de mettre le sots clefs en gras ou en couleur, afin que les visiteurs de votre site voient en premier ce qui est le plus important </p>
+          <br>
+          <p><span class="bold underline-yellow">5) Travailler les titres et les sous titres :</span> les sous titres sont lus ! </p>
+          <br>
+          <p><span class="bold underline-yellow">6) Orientez vos utiisateurs</span>Un formulaire avec des cases à cocher ou prérempli est mieux que un formulaire à remplir, il ne faut pas oublier que les gens sont feignants sur internet et on besoin d’être guidés. </p>
+          <br>
+          <p><span class="bold underline-yellow">7) Les avis clients comptent beaucoup ! </span> Tout dépends de votre cible mais des avis BtoB ou BtoC augmentent votre crédibilité. De manière générale l’avis de grande marque et meilleur que des avis consommateurs. </p>
+          <br>
+          <p><span class="bold underline-yellow">Envoi d’email ou chat depuis une boite féminine :</span> vous pouvez luis créer de faux comptes sociaux. </p>
+          </div>
+        </div>
+
+
+        <div class="paragraphe-cours">
+          <h3>5 - Cas d'études</h3>
+          <div class="text-corps">
+            <p>Sur <a href="https://www.behave.org/tests-of-the-month/" target="_blank">Behave</a> vous trouverez quelques résultats d’AB testing</p>
+            <br>
+            <p>Sur <a href="https://unbounce.com/a-b-testing/how-to-get-the-most-out-of-a-b-testing-case-study/">Unbounce</a> il y a aussi des informations sympas</p>
+            <br>
+            <p class="bold"><a href=" https://www.behave.org/test/subject-line-converted-best/" target="_blank">AB1 :</a> WHICH SUBJECT LINE CONVERTED BEST?</p>
+            <img src="<%= image_path "prototyping-2-7.jpg" %>" alt="" style="">
+            <br>
+            <p class="bold"><a href=" https://www.behave.org/test/hero-image-won-desktop-lost-mobile/" target="_blank">AB2 :</a>WHICH HERO IMAGE WON ON DESKTOP, BUT LOST ON MOBILE? </p>
+            <img src="<%= image_path "prototyping-2-8.jpg" %>" alt="" class="img-responsive" >
+            <img src="<%= image_path "prototyping-2-9.jpg" %>" alt="" class="img-responsive" >
+            <br>
+
+            <p class="bold"><a href="https://www.behave.org/test/without-newsletter-sign-overlay/" target="_blank">AB3 :</a> WITHOUT OR WITH THE NEWSLETTER SIGN-UP OVERLAY?</p>
+            <img src="<%= image_path "prototyping-2-10.jpg" %>" alt="" class="img-responsive" >
+            <img src="<%= image_path "prototyping-2-11.jpg" %>" alt="" class="img-responsive" >
+            <br>
+
+            <p class="bold"><a href="https://www.behave.org/test/overlays-work-best/">AB4 :</a> WHEN DO OVERLAYS WORK BEST?</p>
+            <img src="<%= image_path "prototyping-2-13.jpg" %>" alt="">
+            <img src="<%= image_path "prototyping-2-12.jpg" %>" alt="">
+
+
+            <p class="bold"><a href="https://www.behave.org/test/is-less-always-more/">AB5 : </a> IS LESS ALWAYS MORE ?</p>
+            <img src="<%= image_path "prototyping-2-14.jpg" %>" alt="">
+            <img src="<%= image_path "prototyping-2-15.jpg" %>" alt="">
+
+            <p class="bold"><a href="https://www.behave.org/test/clarity-create-conversions/">AB6 : </a> DOES CLARITY CREATE CONVERSIONS</p>
+            <img src="<%= image_path "prototyping-2-16.jpg" %>" alt="">
+
+            <p class="bold"><a href="https://www.behave.org/test/which-form-position-won/">AB7 : </a> WHICH FORM POSITION WON?</p>
+            <img src="<%= image_path "prototyping-2-17.jpg" %>" alt="">
+
+
+            <p class="bold"><a href="https://www.behave.org/test/without-or-with-coupon-code/">AB8 : </a>WITH OR WITHOUT COUPON CODE?</p>
+            <img src="<%= image_path "prototyping-2-18.jpg" %>" alt="">
+
+            <p class="bold"><a href="https://www.behave.org/test/one-step-two-step-forms/">AB9 : </a>ONE-STEP OR TWO-STEP FORMS?</p>
+            <img src="<%= image_path "prototyping-2-19.jpg" %>" alt="">
+
+
+            <p class="bold"><a href="https://www.behave.org/test/can-there-ever-be-too-much-choice/">AB10 : </a>CAN THERE EVER BE TOO MUCH CHOICE?</p>
+            <img src="<%= image_path "prototyping-2-20.jpg" %>" alt="" style="width:100%; height:20%;">
+
+
+
+          </div>
+        </div>
+
+
+      <div class="paragraphe-cours">
+        <h3>6 - Synthèse sur les tests A/B</h3>
         <div class="text-corps">
           <p>Toujours tester les <span class="highlight-yellow">deux versions simultanément</span>. Auprès d’une population homogène
             <br>Ne pas tirer de conclusions trop tôt. <span class="highlight-yellow">Vérifier que le résultat est statistiquement significatif</span>
             <br>Privilégier le <span class="highlight-yellow">deep testing</span> pour tirer des conclusions sur l’efficacité
             <br>Ne laissez pas votre instinct infirmer les résultats des tests
             <br><span class="highlight-yellow">itérer itérer itérer</span></p>
-
           </div>
         </div>
 
       <div class="paragraphe-cours">
-        <h3>5 - Optimizely</h3>
+        <h3>7 - Optimizely et VWO</h3>
         <div class="text-corps">
           <p>Le but d'<a href="https://app.optimizely.com/">Optimizely</a> et <a href="https://vwo.com/">VWO</a> est de vous aider à <span class="highlight-yellow">faire des tests A/B</span> sur votre site. Vous créer pour cela une expérience qui va comprendre des vatiations de votre site et des events. Optimizely va ensuite analyser quel variation est la plus pertinente en terme de conversions</p>
         </div>

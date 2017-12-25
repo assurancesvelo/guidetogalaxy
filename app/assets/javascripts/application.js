@@ -316,6 +316,10 @@ $('a[href*="#"]')
     }
   });
 
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').focus()
+  })
+
 })(jQuery); // End of use strict
 
 
