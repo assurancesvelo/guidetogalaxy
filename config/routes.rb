@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get "/aarrr" => "pages#aarrr"
   get "/googleanalytics" => "pages#googleanalytics"
   get "/adwords" => "pages#adwords"
+  get "/pmf" => "pages#pmf"
+  get "/growth" => "pages#growth"
 end

@@ -18,5 +18,7 @@ skip_before_action :authenticate_user!
 
   def googleanalytics
   end
+  def pmf
+  end
 
 end
