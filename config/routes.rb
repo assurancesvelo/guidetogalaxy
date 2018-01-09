@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   get "/pmf" => "pages#pmf"
   get "/growth" => "pages#growth"
   get "/facebook" => "pages#facebook"
+  get "/retargeting" => "pages#retargeting"
 end
