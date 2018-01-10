@@ -216,7 +216,40 @@ a{
 }
 }
 
-
+.paragraphe-cours-inverse-blue{
+  background-color: $gray-darker;
+  border-radius:5px;
+  padding-left:1em;
+  padding-right:1em;
+  position: relative;
+  margin-top:5px;
+  img{
+    padding-bottom:1em;
+  }
+  h3{
+   color:white;
+   border-bottom: solid $blue 1px;
+   padding-top:1em;
+   font-family:$base-font;
+   text-transform: uppercase;
+   font-size: 20px;
+   font-weight:bold;
+ }
+ p{
+  color:white;
+}
+.text-corps-inverse{
+ padding:0.5em;
+}
+a{
+  color:$blue;
+  border-bottom:solid 1px $white;
+  text-decoration: none;
+  &:hover{
+    color:$blue;
+  }
+}
+}
 
 xmp {
   background-color: $gray-medium;
