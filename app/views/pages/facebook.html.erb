@@ -221,14 +221,54 @@
           <p><span class="strong">Configuration du Pixel :</span></p>
           <p>Aller dans le gestionnaire de publicité Facebook  et cliquez sur "Pixel"</p>
           <img src="<%= image_path 'facebook-7.jpg' %>" alt="">
+
           <p>Vous pouvez ensuite intégrer le bout de javascript relatif au Pixel entre les balises HEAD de votre site</p>
           <img src="<%= image_path 'facebook-8.jpg' %>" alt="" style="height:300px;">
+
           <p>Retrouvez <a href="https://www.facebook.com/business/help/952192354843755">ici</a> toutes les aides pour installer votre Pixel Facebook</p>
 
-          <p><span class="bold underline-red">2 - Configurer vos évenements</span></p>
+          <p><span class="bold underline-red">2 - Configurer vos conversions</span></p>
 
-          <p><span class="bold underline-red">3 - Créer une conversion personnalisée</span></p>
+          <p><span class="bold undeline-red">Methode 1 :</span></p>
 
+          <p>Vous devez avant tout savoir quel type d'évenement vous voulez suivre, une vente, un lead, un click etc ...</p>
+          <p>Ensuite vous devez implémenter un morceau de code sur la page concernée. Consultez pour cela <a href="https://developers.facebook.com/docs/facebook-pixel/api-reference#events">la documentation pour développer.</a></p>
+          <p>Si vous souhaitez par exemple une vente vous devez utiliser ceci :</p>
+          <xmp>
+
+            <!-- Facebook Pixel Code -->
+            <script>
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+            // Insert Your Facebook Pixel ID below.
+            fbq('init', 'FB_PIXEL_ID');
+            fbq('track', 'PageView');
+            </script>
+            <!-- Insert Your Facebook Pixel ID below. -->
+            <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=FB_PIXEL_ID&amp;ev=PageView&amp;noscript=1"
+            /></noscript>
+            <!-- End Facebook Pixel Code -->
+
+            <script>
+            // Assuming a single item is purchased
+            fbq('track', 'Purchase', {
+              content_name: 'Really Fast Running Shoes',
+              content_category: 'Apparel &amp; Accessories > Shoes',
+              content_ids: ['1234'],
+              content_type: 'product',
+              value: 199.50,
+              currency: 'USD'
+            });
+            </script>
+          </xmp>
+          <p><span class="bold undeline-red">Methode 2 :</span></p>
+          <p>Vous pouvez vous rendre directement dans les configuration de votre pixel, puis vous cliquez sur "créer une conversion personnalisée"</p>
+          <img src="<%= image_path 'facebook-9.jpg' %>" alt="" style="height:300px;">
+          <p>L'inréret c'est que vous pourrez ensuite cibler les personnes qui ont réalisé ce type de conversion</p>
 
       </div>
 
@@ -244,6 +284,7 @@
       <div class="paragraphe-cours">
         <h3>9 - Facebook Analytics</h3>
         <div class="text-corps">
+          <p>Je ne suis pas trop fan de cette interface, mais vous pouvez recouper les mesures avec Adwords pour plus de précision.</p>
         </div>
       </div>
 
