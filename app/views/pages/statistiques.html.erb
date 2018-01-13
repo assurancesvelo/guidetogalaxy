@@ -21,19 +21,37 @@
       <div class="paragraphe-cours">
         <h3>2 - Formuler une hypothèse  </h3>
         <div class="text-corps">
-          <p>Une campagne de marketing
-            <br>Une refonte d’application
-            <br>Un changement de pricing
-            <br>Frais d’expédition
-            <br>Modification du design
-            <br>Modification textes et libellé de boutons</p>
+          <ul>
+            <li>
+              <p>Ma campagne de marketing est elle pertinente ?</p>
+            </li>
+            <li>
+              <p>Les changements fait sur mon app sont ils bons ? </p>
+            </li>
+            <li>
+              <p>Dois-je changer de princing ?</p>
+            </li>
+            <li>
+              <p>Dois-je faire payer les frais d’expédition ?</p>
+            </li>
+            <li>
+              <p>La modification du design de mon site a t'il un impact sur les ventes ?</p>
+            </li>
+            <li>
+              <p>Quel libellé du bouton de paiement est il le meilleur ?</p>
+            </li>
+          </ul>
         </div>
       </div>
 
       <div class="paragraphe-cours">
         <h3>3 - Definir le test  </h3>
         <div class="text-corps">
-          <p>Quelle est votre audience cible ? <br> Que voulez-vous qu’ils fassent ? <br> Pourquoi devraient ils le faire ?  <br> <br> Chercher à savoir <span class="highlight-yellow">QUI fera QUOI et POURQUOI</span>, suffisamment pour améliorer le KPI ciblé. </p>
+          <p>Quelle est votre audience cible ?
+            <br> Que voulez-vous qu’ils fassent ?
+            <br> Pourquoi devraient ils le faire ?
+            <br> <br> Chercher à savoir <span class="highlight-yellow">QUI fera QUOI et POURQUOI</span>, suffisamment pour améliorer le KPI ciblé.
+            <br> <br> <span class="bold">Par exemple :</span> Les cyclistes vont faire une devis pour recevoir des informations complémentaires sur le produit d'assurance </p>
         </div>
       </div>
 
@@ -48,7 +66,7 @@
       <div class="paragraphe-cours">
         <h3>5 - Comment savoir si un test est un succès ou non ?</h3>
         <div class="text-corps">
-          <p> Utiliser ce petit module de calcul : <a href="www.evanmiller.org/ab-testing/chi-squared.html">www.evanmiller.org/ab-testing/chi-squared.html</a></p>
+          <p> Utiliser ce petit module de calcul : <a href="www.evanmiller.org/ab-testing/chi-squared.html" target="_blank">www.evanmiller.org/ab-testing/chi-squared.html</a></p>
         </div>
       </div>
 
@@ -62,6 +80,7 @@
         <h3>Exemple 1</h3>
         <div class="text-corps">
           <p> faisons un A/B test sur 200 personnes, 100 personnes vont voir la version A et les 100 autres la versions B. La version A convertie à 14%, la version B à 20%
+          <img src="<%= image_path "stat-1.jpg" %>" alt="" style="width:100%; height:100%;">
           <br><br><span class="highlight-yellow">D’un point de vue statistique il est impossible de distinguer les deux versions pour savoir quelle est la meilleure</span>.
           <br><br>Dans ce cas précis on a 95% (de confiance statistique) de chance que la réalité sont dans les fourchettes suivantes :
           <br><br> 8,5% - 22,1% et 13,3% - 28,9% </p>
@@ -73,9 +92,10 @@
         <div class="text-corps">
           <p>
             On refait la même expérience avec 1000 personnes par test
+            <img src="<%= image_path "stat-2.jpg" %>" alt="" style="width:100%; height:100%;">
             <br><br><span class="highlight-yellow">Dans ce cas là la version 2 est meilleure car on a un échantillon assez grand</span>.
             <br><br>Dans ce cas précis on a 95% (de confiance statistique) de chance que la réalité soit dans les fourchettes suivantes :
-            <br><br>12% - 16% et 17,6% - 22,6%
+            <br><br>12% - 16,3% et 17,6% - 22,6%
           </p>
         </div>
       </div>
@@ -86,6 +106,7 @@
         <p>
           Faisons un A/B test sur 1100 personnes, 1000 personnes vont voir la version A et les 100 autres la versions B.
           <br><br>La version A convertie à 14%, la version B à 20%
+          <img src="<%= image_path "stat-3.jpg" %>" alt="" style="width:100%; height:100%;">
           <br><br><span class="highlight-yellow">D’un point de vue statistique il est impossible de distinguer les deux versions pour savoir quelle est la meilleure</span>.
           <br><br>Dans ce cas précis on a 95% (de confiance statistique) de chance que la réalité sont dans les fourchettes suivantes :
           <br><br>12% - 16.3% et 13.3% - 28.9%
@@ -99,6 +120,7 @@
         <p>
           Faisons un A/B test sur 1100 personnes, 1000 personnes vont voir la version A et les 100 autres la versions B.
           <br><br><span class="highlight-yellow">La version A convertie à 14%, la version B à 30%</span>
+          <img src="<%= image_path "stat-4.jpg" %>" alt="" style="width:100%; height:100%;">
           <br><br>Dans ce cas précis on a 95% (de confiance statistique) de chance que la réalité sont dans les fourchettes suivantes :
           <br><br>12% - 16.3% et 21,9% - 39,6%
         </p>
@@ -118,6 +140,7 @@
         <div class="text-corps">
         <p>On va regarder à 10% près maintenant si le résultat du test est meilleur ou non. Quel est donc la taille des échantillons à avoir.
         <br><br>Supponsons que nous voulons 5% de conversions on doit donc être sur l’intervalle 4.5% - 5.5%
+        <img src="<%= image_path "stat-5.jpg" %>" alt="" style="width:100%; height:100%;">
         <br><br> <span class="highlight-yellow">Les mathématiques disent ici qu’il faut 30 244 personnes.</span></p>
         <br>
         <p>Outil en ligne pour calculer cela : <a href="http://www.evanmiller.org/ab-testing/sample-size.html">http://www.evanmiller.org/ab-testing/sample-size.html</a></p>
