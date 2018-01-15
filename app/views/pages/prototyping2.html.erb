@@ -24,8 +24,6 @@
         <h3>2 - L'A/B testing c'est quoi ?</h3>
         <div class="text-corps">
           <p><span class="highlight-yellow">Beaucoup de choses sont contre intuitives dans le business</span>. L'idée est donc de vous vixer des hypothèse, par exemple : changer votre value proposition, changer un boutton etc ... et de voir ce qui marche le mieux</p>
-          <p><span class="bold underline-green">Présentation de l'A/B testing par le CEO d'Optimizely</span></p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Eh00PoR76NY" frameborder="0" allowfullscreen></iframe>
           <br><br>
           <p>Cas d'étude sympa, sur les experinces d'A/B testing menées lors de la <a href="https://blog.optimizely.com/2010/11/29/how-obama-raised-60-million-by-running-a-simple-experiment/">campagne de obama</a> en 2008 </p>
         </div>
@@ -126,6 +124,9 @@
           <p><span class="bold underline-green">6) Orientez vos utilisateurs :</span> Un formulaire avec des cases à cocher ou prérempli est mieux que un formulaire à remplir, il ne faut pas oublier que les gens sont feignants sur internet et on besoin d’être guidés. </p>
           <br>
           <p><span class="bold underline-green">7) Les avis clients comptent beaucoup ! </span> Tout dépends de votre cible mais des avis BtoB ou BtoC augmentent votre crédibilité. De manière générale l’avis de grande marque et meilleur que des avis consommateurs. </p>
+          <br>
+          <p>Vous pouvez retrouver plein des tests et des cas à connaitres sur le site de <a href="https://www.nickkolenda.com/">Nick Kolenda</a></p>
+          <a href="https://www.nickkolenda.com/"><img src="<%= image_path 'prototyping-2-26.jpg' %>" alt=""></a>
           </div>
         </div>
 
@@ -138,29 +139,70 @@
             <p>Sur <a href="https://unbounce.com/a-b-testing/how-to-get-the-most-out-of-a-b-testing-case-study/">Unbounce</a> il y a aussi des informations sympas</p>
             <br>
             <p class="bold"><a href=" https://www.behave.org/test/subject-line-converted-best/" target="_blank">AB1 :</a> WHICH SUBJECT LINE CONVERTED BEST?</p>
+            <p><span class="bold">Version A :</span> Subject line stating, “The Virgin Holidays Sale – hot offers. . . cool prices!”</p>
+            <p><span class="bold">Version B :</span> Subject line stating, “Where shall we go today? Just for you”</p>
             <img src="<%= image_path "prototyping-2-7.jpg" %>" alt="" style="">
+            <p><span class="highlight-yellow bold">Version A : WIN</span></p>
+            <p><span class="bold">Analysis :</span> La mot "Sale" génère de l'intéret surtout quand il est suivi d'une formule comme "cool prices". L'autre phrase avec les mots "You", "We" rend la fomrule peu clair et parle plus de "We" que de "Me".
+            Dans cette deuxième formule nous n'avons pas le bénéfice pour le client qui directement explicite.</p>
             <br>
             <p class="bold"><a href=" https://www.behave.org/test/hero-image-won-desktop-lost-mobile/" target="_blank">AB2 :</a>WHICH HERO IMAGE WON ON DESKTOP, BUT LOST ON MOBILE? </p>
+            <p><span class="bold">Version A :</span>  Hero image showing a brunette model with hair extensions</p>
+            <p><span class="bold">Version B :</span> Hero image showing a blonde model before and after affixing hair extensions</p>
             <img src="<%= image_path "prototyping-2-8.jpg" %>" alt="" class="img-responsive" >
             <img src="<%= image_path "prototyping-2-9.jpg" %>" alt="" class="img-responsive" >
+            <p><span class="highlight-yellow bold">Version B : WIN</span></p>
+            <p>En ralité le version B gagne sur ordi et la version A sur mobile.</p>
+            <p><span class="bold">Analysis :</span> L'impact des images est enorme, pensez à faire plein de tests.</p>
             <br>
 
             <p class="bold"><a href="https://www.behave.org/test/without-newsletter-sign-overlay/" target="_blank">AB3 :</a> WITHOUT OR WITH THE NEWSLETTER SIGN-UP OVERLAY?</p>
+            <p><span class="bold">Version A :</span> No overlay; newsletter sign-up option appeared only at page bottom</p>
+            <p><span class="bold">Version B :</span> With overlay; newsletter sign-up overlay appeared to returning visitors after five seconds on site</p>
             <img src="<%= image_path "prototyping-2-10.jpg" %>" alt="" class="img-responsive" >
             <img src="<%= image_path "prototyping-2-11.jpg" %>" alt="" class="img-responsive" >
+            <p><span class="highlight-yellow bold">Version B : WIN</span></p>
+            <p><span class="bold">Analysis :</span> un placement de formulaire en surimpression peut etre bien mais il faut resperctrer 3 critères :</p>
+            <ul>
+              <li>
+                <p><span class="bold">Le timing :</span> il faut faire apparaitre votre form quand l'utilisateur est au pic d'engagement</p>
+              </li>
+              <li>
+                <p><span class="bold">Le placement :</span> bien visible (pas de scroll).</p>
+              </li>
+              <li>
+                <p><span class="bold">Motivant :</span> ici il donne un discount.</p>
+              </li>
+            </ul>
             <br>
 
             <p class="bold"><a href="https://www.behave.org/test/overlays-work-best/">AB4 :</a> WHEN DO OVERLAYS WORK BEST?</p>
+            <p><span class="bold">Version A :</span>  Email sign-up overlay <span class="bold">without</span> a $10 off incentive </p>
+            <p><span class="bold">Version B :</span> Email sign-up overlay <span class="bold">with</span> a $10 off incentive</p>
             <img src="<%= image_path "prototyping-2-13.jpg" %>" alt="">
             <img src="<%= image_path "prototyping-2-12.jpg" %>" alt="">
+            <p><span class="highlight-yellow bold">Version B : WIN</span></p>
+            <p><span class="bold">Analysis :</span> Faut pas réfléchir les promos ça marche toujours !</p>
+
 
 
             <p class="bold"><a href="https://www.behave.org/test/is-less-always-more/">AB5 : </a> IS LESS ALWAYS MORE ?</p>
+            <p><span class="bold">Version A :</span>  Longer mobile product page that provides additional context </p>
+            <p><span class="bold">Version B :</span> Shorter mobile product page without additional context, leaving only actionable information</p>
             <img src="<%= image_path "prototyping-2-14.jpg" %>" alt="">
             <img src="<%= image_path "prototyping-2-15.jpg" %>" alt="">
+            <p><span class="highlight-yellow bold">Version B : WIN</span></p>
+            <p><span class="bold">Analysis :</span> De manière génèrale les pages courtes convertissent sur mobile, mais pesez à segementer vos cible pas qe en fonction du device mais aussi en fonction de l'usage (sont ils en wifi ou non etc ...)</p>
+
+
 
             <p class="bold"><a href="https://www.behave.org/test/clarity-create-conversions/">AB6 : </a> DOES CLARITY CREATE CONVERSIONS</p>
+            <p><span class="bold">Version A :</span>  Three page application, including a checklist page  </p>
+            <p><span class="bold">Version B :</span> Two page application, jumping directly to the submission form</p>
             <img src="<%= image_path "prototyping-2-16.jpg" %>" alt="">
+            <p><span class="highlight-yellow bold">Version A : WIN</span></p>
+            <p><span class="bold">Analysis :</span> </p>
+
 
             <p class="bold"><a href="https://www.behave.org/test/which-form-position-won/">AB7 : </a> WHICH FORM POSITION WON?</p>
             <img src="<%= image_path "prototyping-2-17.jpg" %>" alt="">
@@ -464,10 +506,9 @@
 
 
       <div class="paragraphe-cours">
-        <h3>1 - Lean Analytics</h3>
+        <h3>1 - Présentation de l'A/B testing par le CEO d'Optimizely</h3>
         <div class="text-corps">
-          <p>Livre vous donnant des conseils de Growth Hacking pour le lancement de votre Start-Up</p>
-          <a href="https://www.amazon.fr/Lean-Analytics-Alistair-Croll/dp/1449335675/ref=sr_1_1?ie=UTF8&qid=1515143874&sr=8-1&keywords=lean+analytics"><img src="<%= image_path "prototyping-2-22.jpg" %>" alt="" style="width:200px"></a>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Eh00PoR76NY" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
 
