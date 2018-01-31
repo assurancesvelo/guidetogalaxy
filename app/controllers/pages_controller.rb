@@ -3,20 +3,39 @@ skip_before_action :authenticate_user!
 
   def home
   end
-  def prototyping1
-  end
-  def prototyping2
-  end
-  def statistiques
-  end
-  def aarrr
-  end
-  def googleanalytics
-  end
-  def pmf
-  end
-  def retargeting
+
+
+  def prototyping194V3
   end
 
+
+  def prototyping278g9
+  end
+
+
+  def statistiques975
+  end
+
+  def aarrr256
+  end
+
+  def googleanalytics9565
+  end
+
+  def pmf46292
+  end
+
+  def adwords876T
+  end
+
+  def retargetingZW678
+  end
+
+  def facebook666S
+  end
+
+
+  def growth8933G3
+  end
 
 end
