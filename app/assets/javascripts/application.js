@@ -320,6 +320,11 @@ $('a[href*="#"]')
     $('#myInput').focus()
   })
 
+
+  $(.btn-cours).click(function(){
+   ga('send', 'event', 'Category', 'Triggered Event');
+  });
+
 })(jQuery); // End of use strict
 
 
