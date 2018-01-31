@@ -321,10 +321,6 @@ $('a[href*="#"]')
   })
 
 
-  $(.btn-cours).click(function(){
-   ga('send', 'event', 'Category', 'Triggered Event');
-  });
-
 })(jQuery); // End of use strict
 
 
