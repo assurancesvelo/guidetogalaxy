@@ -34,10 +34,10 @@
       <% else %>
 
       <li class="nav-item">
-        <%= link_to "Connexion", new_user_session_path, class: "nav-link nav-link-blue" %>
+        <%= link_to "Connexion", new_user_session_path, class: "nav-link nav-link-blue", id:"connexion-button" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Inscription", new_user_registration_path, class: "nav-link" %>
+        <%= link_to "Inscription", new_user_registration_path, class: "nav-link", id:"inscription-button" %>
       </li>
 
       <% end %>
