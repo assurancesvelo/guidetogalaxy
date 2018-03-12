@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get "/googleanalytics9565" => "pages#googleanalytics9565"
   get "/facebook666S" => "pages#facebook666S"
   get "/adwords876T" => "pages#adwords876T"
-
+  get "/form" => "pages#form"
 
   get "/pmf46292" => "pages#pmf46292"
   get "/growth8933G3" => "pages#growth8933G3"
